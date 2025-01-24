@@ -42,42 +42,42 @@ class Addition : Operation{
         }
 };
 
-class Addition : Operation{
+class Substraction : Operation{
     public:
         void display() override {
             _left_operant->display();
-            cout << " + ";
+            cout << " - ";
             _right_operant->display();
 
         }
         float calculate() override {
-            return _left_operant->calculate() + _right_operant->calculate();
+            return _left_operant->calculate() - _right_operant->calculate();
         }
 };
 
-class Addition : Operation{
+class Multiplication : Operation{
     public:
         void display() override {
             _left_operant->display();
-            cout << " + ";
+            cout << " * ";
             _right_operant->display();
 
         }
         float calculate() override {
-            return _left_operant->calculate() + _right_operant->calculate();
+            return _left_operant->calculate() * _right_operant->calculate();
         }
 };
 
-class Addition : Operation{
+class Division : Operation{
     public:
         void display() override {
             _left_operant->display();
-            cout << " + ";
+            cout << " / ";
             _right_operant->display();
 
         }
         float calculate() override {
-            return _left_operant->calculate() + _right_operant->calculate();
+            return _left_operant->calculate() / _right_operant->calculate();
         }
 };
 
